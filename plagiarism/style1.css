@@ -1,0 +1,34 @@
+body{
+    background-image:url("image background.jpg")  ;
+}
+
+label{
+    display:block;
+    width: 200px;
+    background:#e3362c;
+    color: #fff;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+input{
+    display:none;
+}
+
+input{
+    animation-duration: 1s;
+    animation-name: s;
+}
+@keyframes s{
+    from{
+        margin-left: 50%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}

@@ -1,0 +1,35 @@
+
+
+.back-video{
+    position: absolute;
+    right: 50;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+@media(min-aspect-ratio:16/9){
+    .back-video{
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9){
+    .back-video{
+        width:50%;
+        height:100%;
+    }
+}
+
+
+a{
+    display:block;
+    width: 200px;
+    background:black;
+    color: #fff;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
