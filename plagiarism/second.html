@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <title>image detector</title>
-    <head>
-        <center>
-            <link rel="stylesheet" href="style1.css">
-            <h1 STYLE="COLOR:WHITE";">DON'T WORRY!!"</h1>
-            <h1 style="color: rgb(165, 42, 89);">"we are here for you to help !!"</h1>
-        </center>
-    </head>
+<head>
+    <title>Image Detector</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <center>
+        <h1 style="color: white;">DON'T WORRY!!</h1>
+        <h1 style="color: rgb(165, 42, 89);">"We are here to help you!!"</h1>
+    </center>
     <hr>
-    <body>
-        <center>
-        
-        </center>
-           <center>
-            
-              <h1 STYLE="COLOR:rgb(44, 185, 138);">"YOUR PHOTO WILL BE SO SAFE!! "</h1>
-              <P STYLE="COLOR:rgb(185, 84, 44);">WE ARE HERE TO SAVE YOU!!</P>
-              <h3 STYLE="COLOR:rgb(185, 44, 167)";>YOUR IMAGE HERE </h3>
-               <link rel="stylesheet"href="style1.css">
-                <div class="hero">
-                    <div class="card">
-                        <h3 STYLE="COLOR:WHITE";>YOU CAN BELEIVE HAS AND UPLOAD YOUR PIC!!</h3>
-                        <IMG SRC="account images.png" id="profile-pic">
-                     <label for="input-file" >UPLOAD YOUR IMAGE</label>
-                     <input type="file" accept="image/jpeg,image/png,image/jpg"id="input-file" >
-                </div>
-            </div>     
-            </center>
+    <center>
+        <h1 style="color: rgb(44, 185, 138);">"YOUR PHOTO WILL BE SAFE!!"</h1>
+        <p style="color: rgb(185, 84, 44);">WE ARE HERE TO HELP YOU!!</p>
+        <h3 style="color: rgb(185, 44, 167);">YOUR IMAGE HERE</h3>
+        <link rel="stylesheet" href="style1.css">
+        <div class="hero">
+            <div class="card">
+                <h3 style="color: white;">YOU CAN TRUST US AND UPLOAD YOUR PIC!!</h3>
+                <img src="account-images.png" id="profile-pic">
+                <label for="input-file">UPLOAD YOUR IMAGE</label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+            </div>
+        </div>
+    </center>
     <script>
-        let profilepic = document.getElementById("profile.pic");
+        let profilepic = document.getElementById("profile-pic");
         let inputFile = document.getElementById("input-file");
 
-        inputFile.onchange=function(){
-            profilepic.scr =URL.createObjectURL(inputFile.files[0]);
+        inputFile.onchange = function () {
+            profilepic.src = URL.createObjectURL(inputFile.files[0]);
         }
-
     </script>
 </body>
 </html>
